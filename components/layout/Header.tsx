@@ -147,13 +147,13 @@ export default function Header({ className = '' }: HeaderProps) {
       <div className="hidden md:flex absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 items-center gap-2 lg:gap-3">
         <Link
           href="/login"
-          className="w-16 lg:w-20 h-8 lg:h-10 outline-gray-200 rounded-md flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900"
+          className="w-16 lg:w-20 h-8 lg:h-10 bg-white outline-gray-200 rounded-md flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900"
         >
           Login
         </Link>
         <Link
           href="/get-started"
-          className="w-28 lg:w-40 h-8 lg:h-10 rounded-md outline outline-1 outline-offset-[-1px] outline-gray-200 flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900"
+          className="w-28 lg:w-40 h-8 lg:h-10 rounded-md outline outline-1 outline-offset-[-1px] bg-white outline-gray-200 flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900"
         >
           <span className="hidden sm:inline">Get Started - Free</span>
           <span className="sm:hidden">Get Started</span>

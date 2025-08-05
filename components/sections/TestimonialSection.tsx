@@ -22,7 +22,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    quote: "Integrating TheySaid has been a game-changer. We've seen a 5-10% decrease in customer churn with an increase in upsell opportunities since its implementation.",
+    quote: "Implementing TheySaid has led to a 5-10% increase in qualified leads from our existing customers in just a few months while reducing churn. The results speak for themselves.",
     name: "Srikrishnan Ganesan",
     position: "Co-Founder & CEO @ Rocketlane",
     avatar: "/pro/2.png" // Temporary using existing image
@@ -36,7 +36,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 4,
-    quote: "TheySaid's AI Surveys help us step up our insight gathering game. Its smarter, and more engaging for customers.",
+    quote: "Implementing TheySaid has led to a 5-10% increase in qualified leads from our existing customers in just a few months while reducing churn. The results speak for themselves.",
     name: "Maggie C.",
     position: "VP, Product Design @ ClickUp",
     avatar: "/pro/1.png"
