@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/sections/Hero';
+import LogoSection from '@/components/sections/LogoSection';
 
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-       <Hero />
+        <Hero />
+        <LogoSection />
       </main>
     </div>
   );
