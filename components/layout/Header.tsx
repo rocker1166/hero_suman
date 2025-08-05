@@ -43,7 +43,7 @@ export default function Header({ className = '' }: HeaderProps) {
   }, []);
 
   return (
-    <header className={`w-full max-w-7xl mx-auto h-16 relative bg-white border-b border-gray-100 px-4 sm:px-6 lg:px-8 ${className}`}>
+    <header className={`w-full max-w-7xl mx-auto h-16 fixed top-0 left-0 right-0 z-50  backdrop-blur-sm  px-4 sm:px-6 lg:px-8 ${className}`}>
       {/* Logo */}
       <Image 
         className="w-24 sm:w-32 h-6 sm:h-8 absolute left-4 sm:left-[67.55px] top-1/2 transform -translate-y-1/2" 
@@ -55,7 +55,7 @@ export default function Header({ className = '' }: HeaderProps) {
       
       {/* Hamburger Menu Button for Small Screens */}
       <button 
-        className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 p-2 z-50 bg-white rounded-md"
+        className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 p-2 z-50 rounded-md"
         aria-label="Toggle mobile menu"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
@@ -99,7 +99,7 @@ export default function Header({ className = '' }: HeaderProps) {
           
           {/* Resources Dropdown Menu */}
           {isResourcesOpen && (
-            <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-md py-2 w-48 z-50">
+            <div className="absolute top-full left-0 mt-1 backdrop-blur-md shadow-lg rounded-md py-2 w-48 z-50">
               <Link href="/blog" className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">
                 Blog
               </Link>
@@ -130,19 +130,19 @@ export default function Header({ className = '' }: HeaderProps) {
       {/* Auth Buttons - Responsive */}
       <div className="hidden md:flex absolute right-4 lg:right-6 top-1/2 transform -translate-y-1/2 items-center gap-2 lg:gap-3">
         {/* Login Button */}
-        <Link href="/login" className="w-16 lg:w-20 h-8 lg:h-10 relative bg-white rounded-md flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900">
+        <Link href="/login" className="w-16 lg:w-20 h-8 lg:h-10 relative outline-gray-200 rounded-md flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900">
           Login
         </Link>
         
         {/* Get Started Button */}
-        <Link href="/get-started" className="w-28 lg:w-40 h-8 lg:h-10 relative bg-white rounded-md outline outline-1 outline-offset-[-1px] outline-gray-200 flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900">
+        <Link href="/get-started" className="w-28 lg:w-40 h-8 lg:h-10 relative rounded-md outline outline-1 outline-offset-[-1px] outline-gray-200 flex items-center justify-center text-xs lg:text-sm font-medium text-zinc-900">
           <span className="hidden sm:inline">Get Started - Free</span>
           <span className="sm:hidden">Get Started</span>
         </Link>
       </div>
       
       {/* Mobile Menu - Hidden by default, can be toggled */}
-      <div className={`md:hidden fixed top-16 left-0 right-0 bg-white border-b border-gray-100 shadow-lg z-40 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
+      <div className={`md:hidden fixed top-16 left-0 right-0 backdrop-blur-sm   shadow-lg z-40 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
         <nav className="flex flex-col p-6 space-y-4 max-h-[calc(100vh-4rem)] overflow-y-auto">
           <Link href="/" className="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors" onClick={() => setIsMenuOpen(false)}>
             Home
@@ -198,7 +198,7 @@ export default function Header({ className = '' }: HeaderProps) {
             </Link>
             <Link 
               href="/get-started" 
-              className="bg-gradient-to-r from-rose-400 to-indigo-400 text-white text-sm font-medium px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
+              className=" text-white text-sm font-medium px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started - Free
