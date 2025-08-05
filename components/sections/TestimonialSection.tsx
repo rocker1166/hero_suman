@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 5,
-    quote: "Really easy to use and I think this might be one of the best way to engage with your customers! Platform will really boost your customer engagement.",
+    quote: "Really easy to use and I think this might be one of the best way to engage with your customers! Platform will really boost your customer engagement. The  is a great platform",
     name: "Danny L.",
     position: "Co-Founder",
     avatar: "/pro/2.png"

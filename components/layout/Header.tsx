@@ -122,7 +122,7 @@ export default function Header({ className = '' }: HeaderProps) {
           </div>
 
           {isResourcesOpen && (
-            <div className="absolute top-full left-0 mt-1 backdrop-blur-md shadow-lg rounded-md py-2 w-48 z-50">
+            <div className="absolute top-full left-0 mt-1 bg-white/95 backdrop-blur-md shadow-lg rounded-md py-2 w-48 z-50">
               {RESOURCE_LINKS.map(({ href, label }) => (
                 <Link key={href} href={href} className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">
                   {label}
