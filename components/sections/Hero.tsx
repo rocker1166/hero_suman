@@ -40,7 +40,7 @@ export default function Hero() {
                 <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-[53.12px] font-['Inter']">
                   Start a conversation
                 </h1>
-                <p className="mt-6 text-xl text-gray-600 font-normal font-['Inter'] leading-snug">
+                <p className="mt-2 text-xl text-gray-600 font-normal font-['Inter'] leading-snug">
                   10x your insights with AI surveys and interviews
                 </p>
               </div>
