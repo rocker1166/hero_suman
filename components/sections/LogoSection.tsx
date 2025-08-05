@@ -16,10 +16,21 @@ export default function LogoSection() {
           <img className="w-16 h-8 relative" src="/logo/8.png" alt="Partner Logo 8" />
         </div>
         
-        {/* Mobile View - Simple Scrollable Row */}
-        <div className="md:hidden h-32 flex items-center relative">
-          <div className="w-full overflow-x-auto scrollbar-hide px-4">
-            <div className="flex items-center gap-8 min-w-max">
+        {/* Mobile View - Auto-scrolling Loop with hover pause */}
+        <div className="md:hidden h-32 flex items-center relative overflow-hidden">
+          <div className="w-full px-4">
+            <div className="flex items-center gap-8 animate-scroll hover:pause-animation">
+              {/* First set of logos */}
+              <img className="h-6 w-auto" src="/logo/1.png" alt="Partner Logo 1" />
+              <img className="h-6 w-auto" src="/logo/2.png" alt="Partner Logo 2" />
+              <img className="h-6 w-auto" src="/logo/3.png" alt="Partner Logo 3" />
+              <img className="h-6 w-auto" src="/logo/4.png" alt="Partner Logo 4" />
+              <img className="h-6 w-auto" src="/logo/5.png" alt="Partner Logo 5" />
+              <img className="h-6 w-auto" src="/logo/6.png" alt="Partner Logo 6" />
+              <img className="h-6 w-auto" src="/logo/7.png" alt="Partner Logo 7" />
+              <img className="h-6 w-auto" src="/logo/8.png" alt="Partner Logo 8" />
+              
+              {/* Duplicate set for seamless looping */}
               <img className="h-6 w-auto" src="/logo/1.png" alt="Partner Logo 1" />
               <img className="h-6 w-auto" src="/logo/2.png" alt="Partner Logo 2" />
               <img className="h-6 w-auto" src="/logo/3.png" alt="Partner Logo 3" />

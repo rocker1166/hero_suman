@@ -16,11 +16,11 @@ const config: Config = {
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(-250px * 4))' },
+          '100%': { transform: 'translateX(calc(-100%))' },
         }
       },
       animation: {
-        'scroll': 'scroll 40s linear infinite',
+        'scroll': 'scroll 30s linear infinite',
       }
     },
   },
@@ -36,6 +36,13 @@ const config: Config = {
         },
       }
       addUtilities(newUtilities);
+      
+      // Add animation pause utility
+      addUtilities({
+        '.pause-animation': {
+          'animation-play-state': 'paused',
+        }
+      });
     },
   ],
 }
